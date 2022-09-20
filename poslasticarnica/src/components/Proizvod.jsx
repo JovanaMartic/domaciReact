@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Proizvod({pr, dodaj, oduzmi}) {
+function Proizvod({pr, dodaj, oduzmi, kor}) {
     return (
       <div className='kartica'>  
         <img classname = "slika" src = "https:/picsum.photos/200" alt= "SLika"></img>
@@ -10,7 +10,10 @@ function Proizvod({pr, dodaj, oduzmi}) {
           <p className="kartica-sastojci">Cena: {pr.cena}</p>
           <p className="kartica-sastojci">Kolicina: {pr.kolicina}</p>
         </div>
-        <button
+
+         {kor === 0 ? ( <>
+        <p className="kartica-sastojci">Kolicina: {pr.kolicina}</p>
+       <button
               className="btn"
               onClick={() => dodaj(pr.id)}
             > + </button>
@@ -18,6 +21,8 @@ function Proizvod({pr, dodaj, oduzmi}) {
               className="btn"
               onClick={() => oduzmi(pr.id)}
             > - </button>
+             </>
+          ): (<p className="kartica-sastojci">Kolicina: {pr.kolicina}</p>)}
         </div>
     )
   }

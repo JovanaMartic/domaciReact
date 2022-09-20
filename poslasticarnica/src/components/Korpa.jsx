@@ -5,20 +5,20 @@ const Korpa = ({ proizvodi }) => {
     function zbir(){
         var z = 0;
         proizvodi.forEach((prod) => {
-            z = z + prod.cena;
+            z = z + prod.cena * prod.kolicina;
           });
           return z;
     }
-  return (
-    <div className="cart-container">
-      <h3>This is your cart.</h3>
-      {proizvodi.map((prod) => (
-        <Proizvod pr={prod} key={prod.id} />
-      ))}
-
-      <p>Ukuona cena : {zbir()}</p>
-    </div>
-  );
+    return (
+        <>
+        <div className="proizvodi">
+          {proizvodi.map((prod) => (
+            <Proizvod pr={prod} key={prod.id} kor={1}/>
+          ))}
+        </div>
+        <p>  Ukupna cena : {zbir()}</p>
+        </>
+      );
 };
 
 export default Korpa;
