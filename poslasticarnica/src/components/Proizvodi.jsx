@@ -1,12 +1,12 @@
 import React from 'react'
 import Proizvod from './Proizvod'
 
-const Proizvodi = ({przi}) => {
+const Proizvodi = ({przi, dodaj, oduzmi}) => {
   return (
     <div className='proizvodi'>
 
 {przi.map((prod) => (
-        <Proizvod pr = {prod} br = {prod.amount} key={prod.id}/>
+        <Proizvod pr = {prod} key={prod.id} dodaj={dodaj} oduzmi = {oduzmi}/>
       ))}
     </div>
   )

@@ -92,3 +92,17 @@ a {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+.br{
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+}
+.kartica-img-left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.ikonica{
+  margin-left: 30px;
+}
