@@ -1,4 +1,5 @@
 import Proizvod from "./Proizvod";
+import React from 'react'
 
 
 const Korpa = ({ proizvodi }) => {

@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import './App.css';
 import NavigationBar from './components/NavigationBar';
 import Proizvodi from './components/Proizvodi';
@@ -22,7 +24,7 @@ function App() {
       amount: 0,
       kolicina: 0,
       vrsta: "cokoladna",
-      cena: 700,
+      cena: 1500,
       slika: "bambino",
     },
     {
@@ -33,7 +35,7 @@ function App() {
       amount: 0,
       kolicina: 0,
       vrsta: "vocna",
-      cena: 700,
+      cena: 2000,
       slika: "cheesecake",
     },
     {
@@ -44,7 +46,7 @@ function App() {
       amount: 0,
       kolicina: 0,
       vrsta: "vocna",
-      cena: 700,
+      cena: 1300,
       slika: "rafaelo",
     },
     {
@@ -55,7 +57,7 @@ function App() {
       amount: 0,
       kolicina: 0,
       vrsta: "cokoladna",
-      cena: 700,
+      cena: 1500,
       slika: "cokomalina",
     },
   ]);

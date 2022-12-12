@@ -7,7 +7,7 @@ function NavigationBar() {
   return (
     <div className='navigationBar'>
       <Link to="/">Pocetna</Link>
-      <Link to="/pice" className='ikonica'>
+      <Link to="/cokoladne" className='ikonica'>
         <FaBirthdayCake />
       </Link>
       <Link to="/korpa" className='ikonica'>
