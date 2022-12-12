@@ -3,7 +3,7 @@ import React from 'react'
 function Proizvod({pr, dodaj, oduzmi, kor}) {
     return (
       <div className='kartica'>  
-        <img classname = "slika" src = "https:/picsum.photos/200" alt= "SLika"></img>
+        <img className = "slika" src={require ("C:/xampp/htdocs/domaciReact/poslasticarnica/src/slike" + pr.slika)}></img>
         <div className="kartica-body">
           <h3 className="kartica-naslov">{pr.naziv}</h3>
           <p className="kartica-sastojci">{pr.sastojci}</p>

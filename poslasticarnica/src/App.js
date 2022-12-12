@@ -5,6 +5,7 @@ import Proizvodi from './components/Proizvodi';
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Korpa from './components/Korpa';
+import BottomBar from './components/BottomBar';
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
         "Jaja, orah, Plazma keks, šlag krem, slatka pavlaka, čokoladno mleko, aroma vanile",
       amount: 0,
       kolicina: 0,
-      vrsta: "pice",
+      vrsta: "cokoladna",
       cena: 700,
+      slika: "bambino",
     },
     {
       id: 2,
@@ -30,8 +32,9 @@ function App() {
         "Keks plazma, lešnik, mleko, šećet prah, želatin, miker maline, posna slstka pavlaka, krem sir, krokant, maskarpane sir, maslac, poslastičarski margarin Gioia, kristal šeer",
       amount: 0,
       kolicina: 0,
-      vrsta: "pice",
+      vrsta: "vocna",
       cena: 700,
+      slika: "cheesecake",
     },
     {
       id: 3,
@@ -40,8 +43,9 @@ function App() {
         "Jaja, kokos, slatka pavlaka, purter, prah šećer",
       amount: 0,
       kolicina: 0,
-      vrsta: "pice",
+      vrsta: "vocna",
       cena: 700,
+      slika: "rafaelo",
     },
     {
       id: 4,
@@ -50,8 +54,9 @@ function App() {
         "Jaja, šećer, brašno, maslac, biljna mast, crna čokolada, mleko, sredstvo za narastanje testa, slatka pavlaka, crna čokolada, miker malina",
       amount: 0,
       kolicina: 0,
-      vrsta: "pice",
+      vrsta: "cokoladna",
       cena: 700,
+      slika: "cokomalina",
     },
   ]);
 
@@ -107,13 +112,14 @@ function App() {
           path="/"
           element={<Proizvodi przi={proizvodi} dodaj={dodaj} oduzmi = {oduzmi}/>}
         />
-        <Route path="/pice"
-         element={<Proizvodi przi={vrsta("pice")} dodaj = {dodaj} oduzmi = {oduzmi} />} />
-         <Route path="/burgeri"
-             element={<Proizvodi przi={vrsta("burgeri") }  dodaj = {dodaj} oduzmi = {oduzmi}/>} />
+        <Route path="/cokoladne"
+         element={<Proizvodi przi={vrsta("cokoladna")} dodaj = {dodaj} oduzmi = {oduzmi} />} />
+         <Route path="/vocne"
+             element={<Proizvodi przi={vrsta("vocna") }  dodaj = {dodaj} oduzmi = {oduzmi}/>} />
    
              <Route path="/korpa" element={<Korpa proizvodi={korpaProizvodi} />} />
       </Routes>
+      <BottomBar></BottomBar>
     </BrowserRouter>
   );
 }

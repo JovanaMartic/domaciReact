@@ -48,7 +48,9 @@
 
 }
 
-.kartica-slika {
+slika {
+  width:100%;
+  height:17em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -106,4 +108,13 @@ a {
 
 .ikonica{
   margin-left: 30px;
+}
+
+.bottomBar{
+  background-color:rgb(211,
+  211, 211);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
