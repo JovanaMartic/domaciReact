@@ -1,5 +1,5 @@
 import React from 'react'
-import Proizvod from './Proizvod'
+import Proizvod from './Proizvod.jsx'
 
 const Proizvodi = ({przi, dodaj, oduzmi}) => {
   return (

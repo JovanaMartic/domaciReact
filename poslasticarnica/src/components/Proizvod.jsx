@@ -3,6 +3,7 @@ import bambino from 'C:/xampp/htdocs/domaciReact/poslasticarnica/src/slike/bam.j
 import cheese from 'C:/xampp/htdocs/domaciReact/poslasticarnica/src/slike/cheese.jpeg';
 import coko from 'C:/xampp/htdocs/domaciReact/poslasticarnica/src/slike/cokoo.jpeg';
 import rafaelo from 'C:/xampp/htdocs/domaciReact/poslasticarnica/src/slike/rafaeloo.jpeg';
+import cokomoko from 'C:/xampp/htdocs/domaciReact/poslasticarnica/src/slike/cokomoko.jpeg';
 
 function Proizvod({pr, dodaj, oduzmi, kor}) {
     return (
@@ -18,10 +19,15 @@ function Proizvod({pr, dodaj, oduzmi, kor}) {
                   pr.slika === "cokomalina" ? (
                     <img className = "slika" src={coko}></img>
                       ): (
-                        <img className = "slika" src={cheese}></img>
+                        pr.slika==="cokomoko" ? (
+                        <img className = "slika" src={cokomoko}></img>
+                        ):(
+                          <img className = "slika" src={cheese}></img>
+                        
                           )
                     )
-              )}
+              )
+            )}
           <h3 className="kartica-naslov">{pr.naziv}</h3>
           <p className="kartica-sastojci">{pr.sastojci}</p>
           <p className="kartica-sastojci">Cena: {pr.cena}</p>

@@ -10,6 +10,7 @@ import Korpa from './components/Korpa';
 import BottomBar from './components/BottomBar';
 
 
+
 function App() {
 
   const [korpaBroj, postaviKorpaBroj] = useState(0);
@@ -31,7 +32,7 @@ function App() {
       id: 2,
       naziv: "Cheesecake",
       sastojci:
-        "Keks plazma, lešnik, mleko, šećet prah, želatin, miker maline, posna slstka pavlaka, krem sir, krokant, maskarpane sir, maslac, poslastičarski margarin Gioia, kristal šeer",
+        "Keks plazma, lešnik, mleko, šećer prah, želatin, miker maline, posna slatka pavlaka, krem sir",
       amount: 0,
       kolicina: 0,
       vrsta: "vocna",
@@ -42,11 +43,11 @@ function App() {
       id: 3,
       naziv: "Rafaelo",
       sastojci:
-        "Jaja, kokos, slatka pavlaka, purter, prah šećer",
+        "Jaja, kokos, slatka pavlaka, puter, prah šećer",
       amount: 0,
       kolicina: 0,
       vrsta: "vocna",
-      cena: 1300,
+      cena: 1700,
       slika: "rafaelo",
     },
     {
@@ -57,16 +58,27 @@ function App() {
       amount: 0,
       kolicina: 0,
       vrsta: "cokoladna",
-      cena: 1500,
+      cena: 1800,
       slika: "cokomalina",
+    },
+    {
+      id: 5,
+      naziv: "Čoko-moko",
+      sastojci:
+        "Brašno, Čokoladno mleko, maslac, biljna mast, pavlaka, šećer u prahu, slatka pavlaka, kisela voda, plazma",
+      amount: 0,
+      kolicina: 0,
+      vrsta: "cokoladna",
+      cena: 1300,
+      slika: "cokomoko",
     },
   ]);
 
   // const [proizvodi] = useState(pice);
 
   function vrsta(v){
-    let proizvodi_pice = proizvodi.filter((prod) => prod.vrsta === v);
-    return proizvodi_pice;
+    let proizvodi_torte = proizvodi.filter((prod) => prod.vrsta === v);
+    return proizvodi_torte;
   }
 
   function korpa() {
