@@ -15,7 +15,7 @@ function NavigationBar() {
       </Link>
       <Link to="/korpa" className='ikonica'>
         <BsCartFill />
-      </Link>
+        </Link>
       </div>
   )
 }

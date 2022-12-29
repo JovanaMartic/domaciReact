@@ -12,7 +12,8 @@ import BottomBar from './components/BottomBar';
 
 
 function App() {
-
+ 
+  
   const [korpaBroj, postaviKorpaBroj] = useState(0);
   const [korpaProizvodi, postaviKorpaProizvodi] = useState([]);
 
@@ -21,7 +22,7 @@ function App() {
       id: 1,
       naziv: "Bambino",
       sastojci:
-        "Jaja, orah, Plazma keks, šlag krem, slatka pavlaka, čokoladno mleko, aroma vanile",
+        "Jaja, orah, plazma keks, šlag krem, slatka pavlaka, čokoladno mleko, aroma vanile",
       amount: 0,
       kolicina: 0,
       vrsta: "cokoladna",
@@ -74,7 +75,6 @@ function App() {
     },
   ]);
 
-  // const [proizvodi] = useState(pice);
 
   function vrsta(v){
     let proizvodi_torte = proizvodi.filter((prod) => prod.vrsta === v);

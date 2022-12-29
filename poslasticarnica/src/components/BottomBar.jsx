@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { BsCartFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 function BottomBar() {
   return (
